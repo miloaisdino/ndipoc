@@ -1,6 +1,9 @@
 # ndipoc
 Poc to demonstrate sign-in and digital signing
 
+### To run:
+node server.js
+
 ### Install mobile app
 > Please install/update the mobile app again, if you have create your test account before 1 Oct
 
