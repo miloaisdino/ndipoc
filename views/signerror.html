@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Signing Response</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-fluid fixed-top">
+	<div class="row pt-3">
+		<div class="col-md-12">
+			<div class="alert alert-danger">
+				<h5>
+					{{status}}
+				</h5> An error had occurred.
+			</div>
+			<div class="card">
+				<h5 class="card-header">
+					Reason: {{reason}}
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						{{result}}
+					</p>
+				</div>
+				
+			</div>
+            <button type="button" class="btn btn-outline-dark mt-2" onclick="history.back(-1)">
+                <span class="fa fa-arrow-circle-left"></span>
+                Go Back
+            </button>
+		</div>
+	</div>
+</div>
+  </body>
+</html>

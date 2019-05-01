@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>NDI Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+      <div class="container-fluid">
+      <div class="fixed-top pt-2 pl-2 pr-2">
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 33%">Step 1</div>
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 33%">Step 2</div>
+            <!--div class="progress-bar" role="progressbar" style="width: 1px; background-color: #8d8d8d"></div-->
+            <div class="progress-bar text-dark" role="progressbar" style="width: 33%; background-color: #e9ecef">Complete</div>
+        </div>
+    </div>
+    <form class="form-signin" method="POST" action="/sign-in-ndi">
+        <!--img class="mb-4" src="/img/bootstrap-solid.svg" alt="" width="72" height="72"-->
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in with NDI</h1>
+      <label for="name" class="sr-only">NDI Id</label>
+      <input type="text" id="name" name="name" class="form-control" placeholder="NDI Id" required autofocus>
+      <!--label for="password" class="sr-only">Password</label>
+      <input type="password" id="password" name="password" class="form-control" placeholder="Password" required-->
+      <div class="checkbox mb-3">
+        <!--label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label-->
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      
+    </form>
+      </div>
+  </body>
+    <script>
+    $('.form-signin').submit(function() {
+        $(this).find("button[type='submit']").prop('disabled',true);
+    });
+    </script>
+</html>

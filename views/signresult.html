@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Signing Response</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-fluid fixed-top">
+        <div class="progress mt-2" style="height: 30px;">
+            <div class="progress-bar bg-secondary text-light" role="progressbar" style="width: 33%"><a href="/sign-in-ndi" class="text-light">Step 1</a></div>
+            <div class="progress-bar" role="progressbar" style="width: 1px; background-color: #8d8d8d"></div>
+            <div class="progress-bar bg-secondary text-light" role="progressbar" style="width: 33%"><a href="/sign" class="text-light">Step 2</a></div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: calc(34% - 1px)">Complete</div>
+        </div>
+	<div class="row pt-2">
+		<div class="col-md-12">
+			<div class="alert alert-info ">
+				<h5>
+					{{status}}
+				</h5>Signing has been completed successfully!
+			</div>
+			<div class="card">
+				<h5 class="card-header">
+					Message
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						{{content}}
+					</p>
+				</div>
+				<div class="card-footer">
+					Signature: {{result}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  </body>
+</html>
